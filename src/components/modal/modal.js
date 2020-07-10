@@ -16,7 +16,7 @@ import { isValidComponent } from 'KegUtils'
  * @param {Component} props.children children components
  */
 const DefaultAnimationView = ({ ModalContainer, modalStyles, children }) => {
-  if (isValidComponent(ModalContainer)) {
+  if (isValidComponent(ModalContainer))
     return <ModalContainer>{ children }</ModalContainer>
 
   // use the state to keep track of whether the modal has animated yet
